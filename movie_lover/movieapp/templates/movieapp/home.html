@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "movieapp/base.html" %}
+
+{% block content %}
+
+<body>
+    <div class="page-wrapper bg-img-3 p-t-240 p-b-120">
+        <div class="wrapper wrapper--w900">
+
+            <div class="card card-3">
+                <div class="card-body">
+
+                    <form method="POST" action="/your_movie/">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Name</label>
+                                    <input class="input--style-1" type="text" name="from" placeholder="Title of Movie" required="required">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Year</label>
+                                    <input class="input--style-1" type="text" name="to" placeholder="Debut Year" required="required">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <button class="btn-submit m-b-0" type="submit">search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/global.js"></script>
+</body>
+{% endblock %}
+
+</html>
